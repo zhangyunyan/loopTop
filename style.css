@@ -1,0 +1,104 @@
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img { margin:0; padding:0; }
+fieldset, img,input,button { border:none; padding:0;margin:0;outline-style:none; }
+ul, ol { list-style:none; }
+input { padding-top:0; padding-bottom:0; font-family: "SimSun","宋体";}
+select, input { vertical-align:middle;}
+select, input, textarea { font-size:12px; margin:0; }
+textarea { resize:none; } /*防止拖动*/
+img {border:0;	vertical-align:middle; }  /*  去掉图片低测默认的3像素空白缝隙*/
+table { border-collapse:collapse; }
+body {
+    font:12px/150% Arial,Verdana,"\5b8b\4f53";
+    color:#666;
+    background:#fff
+}
+.clearfix:before,.clearfix:after {
+    content:"";
+    display:table;
+}
+.clearfix:after{clear:both;}
+.clearfix{
+    *zoom:1;/*IE/7/6*/
+}
+a {color:#666; text-decoration:none; }
+a:hover{color:#C81623;}
+h1,h2,h3,h4,h5,h6 {text-decoration:none;font-weight:normal;font-size:100%;}
+s,i,em{font-style:normal;text-decoration:none;}
+.col-red{color: #C81623!important;}
+
+
+
+
+.loop{
+    width: 352px;
+    height: 180px;
+    float: left;
+    overflow: hidden;
+    position: relative;
+}
+.loop .slider{
+    width: 352px;
+    height: 180px;
+    position: relative;
+    overflow: hidden;
+}
+.loop img{
+    width: 352px;
+    height: 180px;
+}
+.loop ul{
+    width: 1478px;
+    height: 180px;
+}
+.loop ul li{
+    width: 352px;
+    height: 180px;
+    position: absolute;
+    left:0;
+    top:0;
+}
+.loop ol{
+    text-align: center;
+    position: absolute;
+    left:50%;
+    bottom:10px;
+    width: 150px;
+    height: 20px;
+    margin-left:-75px;
+}
+.loop ol li{
+    width: 20px;
+    height: 20px;
+    border-radius:20px;
+    background: transparent;
+    cursor: pointer;
+    margin-left:10px;
+    float: left;
+    color: transparent;
+    line-height:20px;
+    text-indent: -50px;
+    overflow: hidden;
+}
+
+.loop .control{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.loop .control .pre,
+.loop .control .next{
+    float: left;
+    width: 18px;
+    height: 18px;
+    background: url(./smallLeft.jpg) no-repeat center;
+    margin: 0 0 0 2px;
+}
+.loop .control .next{
+    background: url(./smallRight.jpg) no-repeat center;
+}
+.loop .control .prev{
+    left:0;
+}
+.loop .control .next{
+    right:0;
+}
